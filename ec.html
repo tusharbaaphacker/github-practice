@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Header</title>
+    <style>
+        /* Reset some default styles */
+        
+        body,
+        h1 {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Basic styling */
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .animated-header {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            background-color: #3498db;
+            padding: 2rem;
+            border-radius: 50%;
+            transition: all 0.6s ease;
+            position: relative;
+            perspective: 1000px;
+        }
+        
+        .animated-header h1 {
+            margin: 0;
+        }
+        /* Hover effect */
+        
+        .animated-header:hover {
+            background-color: #e74c3c;
+            border-radius: 0;
+            transform: rotateY(360deg);
+        }
+        
+        .animated-header:hover h1 {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="animated-header">
+        <h1>Hover Over Me!</h1>
+    </header>
+</body>
+
+</html>
